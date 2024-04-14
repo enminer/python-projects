@@ -31,6 +31,9 @@ class ObjectHandler:
 		# npc map
 		add_npc(NPC(game))
 		add_npc(NPC(game, pos=(11.5, 4.5)))
+		add_npc(CacoDemonNPC(game, pos=(19.5, 6.5)))
+		add_npc(CacoDemonNPC(game, pos=(26.3, 7.5)))
+		add_npc(CyberDemonNPC(game, pos=(25.5, 7.2)))
 
 	def update(self):
 		self.npc_positions = {npc.map_pos for npc in self.npc_list if npc.alive}
