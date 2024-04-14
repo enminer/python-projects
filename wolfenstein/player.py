@@ -2,6 +2,11 @@ from settings import *
 import pygame as pg
 import math
 
+PlayerRandomPosGen1 = ()
+PlayerRandomPosGen2 = ()
+PlayerRandomPosGen3 = ()
+PlayerRandomPosGen4 = ()
+PlayerRandomPosGen5 = ()
 
 class Player:
 	def __init__(self, game):

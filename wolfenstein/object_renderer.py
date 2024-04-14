@@ -57,4 +57,5 @@ class ObjectRenderer:
 			3: self.get_texture('recources/textures/3.png'),
 			4: self.get_texture('recources/textures/4.png'),
 			5: self.get_texture('recources/textures/5.png'),
+			6: self.get_texture('recources/textures/6.png')
 		}
