@@ -23,6 +23,7 @@ class Game:
 		self.global_event = pg.USEREVENT + 0
 		pg.time.set_timer(self.global_event, 40)
 		self.new_game()
+		self.sound.theme.play()
 
 	def new_game(self):
 		self.map = Map(self)
@@ -44,7 +45,7 @@ class Game:
 		pg.display.set_caption(f'{self.clock.get_fps() :.1f}')
 
 	def draw(self):
-		# self.screen.fill('black')
+		#self.screen.fill('black')
 		self.object_renderer.draw()
 		self.weapon.draw()
 		# self.map.draw()
